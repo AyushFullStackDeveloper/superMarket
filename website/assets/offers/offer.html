@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXhW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #d4edda;
+            background-color: #2d6a4f;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .offer-header {
+            background-color: #2d6a4f;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .offer-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Set the maximum width of each card */
+            max-width: 350px;
+        }
+
+        .offer-card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            height: 150px;
+            /* Adjust the height of the images */
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .offer-card-body {
+            padding: 15px;
+        }
+
+        .offer-title {
+            font-size: 1rem;
+            /* Adjust the font size of the offer title */
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .offer-description {
+            color: #777777;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            /* Adjust the font size of the offer description */
+        }
+
+        .offer-price {
+            font-size: 1rem;
+            /* Adjust the font size of the offer price */
+            color: #1b4332;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn-order {
+            background-color: #2d6a4f;
+            color: #ffffff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 0.9rem;
+            /* Adjust the font size of the button */
+        }
+
+        .btn-order:hover {
+            background-color: #1b4332;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Super Bazar Offers">
+    <title>Super Bazar Offers</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Super Bazar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Offers Section -->
+    <div class="offer-header">
+        <h1>Exclusive Offers</h1>
+        <p>Don't miss out on these amazing deals!</p>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Offer Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="offer-card mx-auto">
+                    <img src="https://via.placeholder.com/350x150" alt="Offer Image">
+                    <div class="offer-card-body">
+                        <h5 class="offer-title">50% Off on Fresh Fruits</h5>
+                        <p class="offer-description">Get half price on selected fresh fruits this week! Our fruits are
+                            fresh and delicious, sourced from local farms.</p>
+                        <div class="offer-price">$10.00 <small><del>$20.00</del></small></div>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="offer-card mx-auto">
+                    <img src="https://via.placeholder.com/350x150" alt="Offer Image">
+                    <div class="offer-card-body">
+                        <h5 class="offer-title">Buy 1 Get 1 Free Snacks</h5>
+                        <p class="offer-description">Enjoy our buy one, get one free offer on selected snacks! Perfect
+                            for movie nights and gatherings.</p>
+                        <div class="offer-price">$5.00</div>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="offer-card mx-auto">
+                    <img src="https://via.placeholder.com/350x150" alt="Offer Image">
+                    <div class="offer-card-body">
+                        <h5 class="offer-title">20% Off on Dairy Products</h5>
+                        <p class="offer-description">Save on all dairy products with our 20% discount. Choose from a
+                            wide range of fresh and quality products.</p>
+                        <div class="offer-price">$8.00 <small><del>$10.00</del></small></div>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Offers -->
+            <!-- Offer Card 4 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="offer-card mx-auto">
+                    <img src="https://via.placeholder.com/350x150" alt="Offer Image">
+                    <div class="offer-card-body">
+                        <h5 class="offer-title">30% Off on Organic Vegetables</h5>
+                        <p class="offer-description">Enjoy a healthy lifestyle with our organic vegetables, now at a 30%
+                            discount!</p>
+                        <div class="offer-price">$7.00 <small><del>$10.00</del></small></div>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Card 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="offer-card mx-auto">
+                    <img src="https://via.placeholder.com/350x150" alt="Offer Image">
+                    <div class="offer-card-body">
+                        <h5 class="offer-title">25% Off on Beverages</h5>
+                        <p class="offer-description">Quench your thirst with our selection of beverages, now available
+                            at a 25% discount!</p>
+                        <div class="offer-price">$3.75 <small><del>$5.00</del></small></div>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Card 6 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="offer-card mx-auto">
+                    <img src="https://via.placeholder.com/350x150" alt="Offer Image">
+                    <div class="offer-card-body">
+                        <h5 class="offer-title">15% Off on Bakery Items</h5>
+                        <p class="offer-description">Indulge in freshly baked goods with our 15% discount on all bakery
+                            items. Perfect for any occasion!</p>
+                        <div class="offer-price">$4.25 <small><del>$5.00</del></small></div>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
