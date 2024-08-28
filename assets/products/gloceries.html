@@ -278,7 +278,76 @@
                 text-align: center !important;
             }
         }
+
+        /* Move to Top Button Styles */
+        #moveToTopBtn {
+            display: none;
+            /* Hidden by default, shown via JavaScript */
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            /* Ensure it's above other elements */
+            font-size: 20px;
+            background: var(--gradient-dark);
+            color: var(--light-text-color);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            padding: 15px 25px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            /* Creates a frosted glass effect */
+            box-shadow: 0 8px 32px var(--shadow-color);
+            transition: all 0.3s ease;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* Hover effect for the Move to Top button */
+        #moveToTopBtn:hover {
+            background: var(--accent-color);
+            transform: scale(1.15) translateY(-5px);
+            /* Enlarge and lift slightly */
+            box-shadow: 0 12px 48px var(--shadow-color);
+        }
+
+        /* Add an arrow icon before the button text */
+        #moveToTopBtn::before {
+            content: '⬆';
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 24px;
+            vertical-align: middle;
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Animate the arrow icon on hover */
+        #moveToTopBtn:hover::before {
+            transform: translateY(-5px);
+            color: rgba(255, 255, 255, 1);
+        }
+
+        /* Keyframe animation for a subtle glow effect */
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+            }
+
+            100% {
+                box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            }
+        }
+
+        /* Apply the glow animation on hover */
+        #moveToTopBtn:hover {
+            animation: glow 1.5s infinite alternate;
+        }
     </style>
+ 
 </head>
 
 <body>
@@ -316,42 +385,39 @@
             </div>
         </nav>
 
-        <!-- home section start -->
-        <div id="home" class="carousel slide">
+        <!-- Move to Top Button -->
+        <button id="moveToTopBtn" title="Go to top">Move To Top</button>
+        <!--  -->
+        <!-- Carousel container -->
+        <div id="home" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel indicators -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <!-- Indicator for the first slide (active by default) -->
+                <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
+                <!-- Indicator for the second slide -->
+                <button type="button" data-bs-target="#home" data-bs-slide-to="1"></button>
+                <!-- Indicator for the third slide -->
+                <button type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
             </div>
+
+            <!-- Carousel content -->
             <div class="carousel-inner">
+                <!-- First carousel item (active by default) -->
                 <div class="carousel-item active">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipP0qLqOy_8d8PU7rOy6DH2oYIFllzjETiYKylo0=s1360-w1360-h1020"
-                        class="d-block w-100" alt="...">
+                    <!-- Video element as the background of the carousel item -->
+                    <video src="../videos/first-video.mp4" autoplay loop muted class="d-block w-100"></video>
+                    <!-- Caption for the carousel item (hidden on small screens) -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to Super Bazar</h5>
+                        <p>Your one-stop shop for all your needs.</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipMIvPZ6PYJRfQMLbZofJqtZUr9WChi8yebtQE1i=s1360-w1360-h1020"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipNSuR9YG_H0RaiZFDqDI5sEhP4Jz2l-5BpAf5jZ=s1360-w1360-h1020"
-                        class="d-block w-100" alt="...">
-                </div>
+                <!-- Note: Second and third carousel items are missing in this snippet -->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <!-- Note: Carousel controls (prev/next buttons) are missing in this snippet -->
         </div>
-        <!-- home section end -->
+
 
         <!-- products section start -->
         <section id="products" class="section">
@@ -1143,6 +1209,32 @@
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+           <script>
+            // Get the "Move to Top" button element
+            let moveToTopBtn = document.getElementById("moveToTopBtn");
+    
+            // Add scroll event listener to window
+            window.onscroll = function () {
+                scrollFunction();
+            };
+    
+            // Function to show/hide the "Move to Top" button based on scroll position
+            function scrollFunction() {
+                // Show button when user scrolls down 20px from the top of the document
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    moveToTopBtn.style.display = "block";
+                } else {
+                    moveToTopBtn.style.display = "none";
+                }
+            }
+    
+            // Add click event listener to the "Move to Top" button
+            moveToTopBtn.addEventListener("click", function () {
+                // Scroll to the top of the document
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            });
         </script>
 </body>
 

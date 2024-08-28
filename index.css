@@ -1,362 +1,493 @@
  /* CSS Variables for Theme Colors */
  :root {
-    --primary-color: #4caf50;
-    /* Green */
-    --secondary-color: #388e3c;
-    /* Dark Green */
-    --accent-color: #8bc34a;
-    /* Light Green */
-    --background-color: #e8f5e9;
-    /* Very Light Green */
-    --text-color: #2e7d32;
-    /* Deep Green */
-    --light-text-color: #ffffff;
-    /* White */
-    --card-background: #f1f8e9;
-    /* Light Green */
-    --highlight-color: #a5d6a7;
-    /* Pale Green */
-    --gradient-light: linear-gradient(45deg, #e8f5e9, #a5d6a7);
-    --gradient-dark: linear-gradient(45deg, #388e3c, #4caf50);
-    --shadow-color: rgba(46, 125, 50, 0.3);
-}
+     --primary-color: #4caf50;
+     /* Green */
+     --secondary-color: #388e3c;
+     /* Dark Green */
+     --accent-color: #8bc34a;
+     /* Light Green */
+     --background-color: #e8f5e9;
+     /* Very Light Green */
+     --text-color: #2e7d32;
+     /* Deep Green */
+     --light-text-color: #ffffff;
+     /* White */
+     --card-background: #f1f8e9;
+     /* Light Green */
+     --highlight-color: #a5d6a7;
+     /* Pale Green */
+     --gradient-light: linear-gradient(45deg, #e8f5e9, #a5d6a7);
+     --gradient-dark: linear-gradient(45deg, #388e3c, #4caf50);
+     --shadow-color: rgba(46, 125, 50, 0.3);
+ }
 
-/* Global Styles */
-body {
-    padding-top: 76px;
-    background: var(--gradient-light);
-    color: var(--text-color);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+ /* Global Styles */
+ body {
+     padding-top: 76px;
+     background: var(--gradient-light);
+     color: var(--text-color);
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ }
 
-/* Navbar Styles */
-.navbar {
-    box-shadow: 0 4px 6px var(--shadow-color);
-    background: var(--gradient-dark) !important;
-    padding: 1rem 0;
-}
+ /* Navbar Styles */
+ .navbar {
+     box-shadow: 0 4px 6px var(--shadow-color);
+     background: var(--gradient-dark) !important;
+     padding: 1rem 0;
+ }
 
-/* Navbar Styles */
-.navbar-brand {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: var(--light-text-color);
-}
+ /* Navbar Styles */
+ .navbar-brand {
+     font-size: 1.75rem;
+     font-weight: bold;
+     color: var(--light-text-color);
+ }
 
-/* Styling for navigation links */
-.navbar-light .navbar-nav .nav-link {
-    color: var(--light-text-color);
-    transition: color 0.3s ease;
-    /* Smooth color transition on hover */
-}
+ /* Styling for navigation links */
+ .navbar-light .navbar-nav .nav-link {
+     color: var(--light-text-color);
+     transition: color 0.3s ease;
+     /* Smooth color transition on hover */
+ }
 
-/* Hover and focus styles for navigation links */
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:focus {
-    color: var(--accent-color);
-}
+ /* Hover and focus styles for navigation links */
+ .navbar-light .navbar-nav .nav-link:hover,
+ .navbar-light .navbar-nav .nav-link:focus {
+     color: var(--accent-color);
+ }
 
-/* Carousel Styles */
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    background: var(--gradient-dark);
-    overflow: hidden;
-}
+ /* Carousel Styles */
+ .carousel-item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 500px;
+     background: var(--gradient-dark);
+     overflow: hidden;
+ }
 
-/* Styling for carousel images */
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    filter: brightness(0.9) contrast(1.1);
-    /* Adjusting image appearance */
-}
+ /* Styling for carousel images */
+ .carousel-item img {
+     width: 100%;
+     height: auto;
+     filter: brightness(0.9) contrast(1.1);
+     /* Adjusting image appearance */
+ }
 
-/* Styling for carousel captions */
-.carousel-caption {
-    background-color: rgba(46, 125, 50, 0.7);
-    /* Semi-transparent background */
-    border-radius: 5px;
-    padding: 20px;
-    color: var(--light-text-color);
-}
+ /* Styling for carousel captions */
+ .carousel-caption {
+     background-color: rgba(46, 125, 50, 0.7);
+     /* Semi-transparent background */
+     border-radius: 5px;
+     padding: 20px;
+     color: var(--light-text-color);
+ }
 
-/* Section Header Styles */
-.section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--text-color);
-}
+ /* Section Header Styles */
+ .section-header {
+     text-align: center;
+     margin-bottom: 3rem;
+     color: var(--text-color);
+ }
 
-/* Styling for section header titles */
-.section-header h1,
-.section-header h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-}
+ /* Styling for section header titles */
+ .section-header h1,
+ .section-header h2 {
+     font-size: 2.5rem;
+     font-weight: bold;
+     color: var(--secondary-color);
+     margin-bottom: 1rem;
+ }
 
-/* Styling for section header paragraphs */
-.section-header p {
-    font-size: 1.25rem;
-    color: var(--text-color);
-}
+ /* Styling for section header paragraphs */
+ .section-header p {
+     font-size: 1.25rem;
+     color: var(--text-color);
+ }
 
-/* Offers Section Styles */
-.offers-section {
-    background: var(--gradient-light);
-    color: var(--text-color);
-    padding: 5rem 0;
-}
+ /* Offers Section Styles */
+ .offers-section {
+     background: var(--gradient-light);
+     color: var(--text-color);
+     padding: 5rem 0;
+ }
 
-/* Styling for individual offer cards */
-.offer-card {
-    background-color: var(--card-background);
-    border-radius: 15px;
-    padding: 2rem;
-    height: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for hover effects */
-    text-align: center;
-    color: var(--text-color);
-}
+ /* Styling for individual offer cards */
+ .offer-card {
+     background-color: var(--card-background);
+     border-radius: 15px;
+     padding: 2rem;
+     height: 100%;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     /* Smooth transition for hover effects */
+     text-align: center;
+     color: var(--text-color);
+ }
 
-/* Hover effect for offer cards */
-.offer-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px var(--shadow-color);
-}
+ /* Hover effect for offer cards */
+ .offer-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 15px 30px var(--shadow-color);
+ }
 
-/* Styling for icons in offer cards */
-.offer-card i {
-    font-size: 3rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
+ /* Styling for icons in offer cards */
+ .offer-card i {
+     font-size: 3rem;
+     color: var(--accent-color);
+     margin-bottom: 1rem;
+ }
 
-/* Styling for offer card titles */
-.offer-card h3 {
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-}
+ /* Styling for offer card titles */
+ .offer-card h3 {
+     color: var(--secondary-color);
+     margin-bottom: 1rem;
+ }
 
-/* Styling for offer card paragraphs */
-.offer-card p {
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
-}
+ /* Styling for offer card paragraphs */
+ .offer-card p {
+     color: var(--text-color);
+     margin-bottom: 1.5rem;
+ }
 
-/* Styling for buttons in offer cards */
-.offer-card .btn {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--light-text-color);
-}
+ /* Styling for buttons in offer cards */
+ .offer-card .btn {
+     background-color: var(--primary-color);
+     border-color: var(--primary-color);
+     color: var(--light-text-color);
+ }
 
-/* Hover effect for buttons in offer cards */
-.offer-card .btn:hover {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
+ /* Hover effect for buttons in offer cards */
+ .offer-card .btn:hover {
+     background-color: var(--accent-color);
+     border-color: var(--accent-color);
+ }
 
-/* Product Section Styles */
-.card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for hover effects */
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    background: var(--gradient-light);
-}
+ /* Product Section Styles */
+ .card {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     /* Smooth transition for hover effects */
+     border: none;
+     border-radius: 15px;
+     overflow: hidden;
+     background: var(--gradient-light);
+ }
 
-/* Hover effect for product cards */
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px var(--shadow-color);
-}
+ /* Hover effect for product cards */
+ .card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 15px 30px var(--shadow-color);
+ }
 
-/* Styling for product card images */
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
+ /* Styling for product card images */
+ .card-img-top {
+     height: 200px;
+     object-fit: cover;
+ }
 
-/* Styling for product card body */
-.card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-}
+ /* Styling for product card body */
+ .card-body {
+     flex-grow: 1;
+     display: flex;
+     flex-direction: column;
+     padding: 1.5rem;
+ }
 
-/* Styling for product card titles */
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: var(--secondary-color);
-}
+ /* Styling for product card titles */
+ .card-title {
+     font-size: 1.25rem;
+     font-weight: bold;
+     color: var(--secondary-color);
+ }
 
-/* Styling for product card text */
-.card-text {
-    flex-grow: 1;
-    margin-bottom: 1rem;
-}
+ /* Styling for product card text */
+ .card-text {
+     flex-grow: 1;
+     margin-bottom: 1rem;
+ }
 
-/* Button Styles */
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--light-text-color);
-    transition: all 0.3s ease;
-    /* Smooth transition for hover effects */
-    padding: 0.75rem 1.5rem;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    display: inline-block;
-}
+ /* Button Styles */
+ .btn-primary {
+     background-color: var(--primary-color);
+     border-color: var(--primary-color);
+     color: var(--light-text-color);
+     transition: all 0.3s ease;
+     /* Smooth transition for hover effects */
+     padding: 0.75rem 1.5rem;
+     text-align: center;
+     border-radius: 5px;
+     font-weight: bold;
+     font-size: 1rem;
+     text-decoration: none;
+     display: inline-block;
+ }
 
-/* Hover and focus effects for primary buttons */
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    color: var(--light-text-color);
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px var(--shadow-color);
-}
+ /* Hover and focus effects for primary buttons */
+ .btn-primary:hover,
+ .btn-primary:focus {
+     background-color: var(--accent-color);
+     border-color: var(--accent-color);
+     color: var(--light-text-color);
+     transform: scale(1.05);
+     box-shadow: 0 4px 8px var(--shadow-color);
+ }
 
-/* Additional Styles for Contact Section */
-.contact-card {
-    position: relative;
-    text-align: center;
-    padding: 2rem;
-    background: var(--gradient-light);
-    border-radius: 15px;
-    box-shadow: 0 4px 6px var(--shadow-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+ /* Additional Styles for Contact Section */
+ .contact-card {
+     position: relative;
+     text-align: center;
+     padding: 2rem;
+     background: var(--gradient-light);
+     border-radius: 15px;
+     box-shadow: 0 4px 6px var(--shadow-color);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
 
-/* Contact Card Styles */
-.contact-card:hover {
-    transform: translateY(-5px);
-    /* Slight upward movement on hover */
-    box-shadow: 0 4px 8px var(--shadow-color);
-    /* Add shadow for depth */
-}
+ /* Contact Card Styles */
+ .contact-card:hover {
+     transform: translateY(-5px);
+     /* Slight upward movement on hover */
+     box-shadow: 0 4px 8px var(--shadow-color);
+     /* Add shadow for depth */
+ }
 
-/* Icon styling within contact cards */
-.contact-card i {
-    color: var(--secondary-color);
-}
+ /* Icon styling within contact cards */
+ .contact-card i {
+     color: var(--secondary-color);
+ }
 
-/* Heading style for contact cards */
-.contact-card h3 {
-    color: var(--secondary-color);
-    margin: 1rem 0;
-}
+ /* Heading style for contact cards */
+ .contact-card h3 {
+     color: var(--secondary-color);
+     margin: 1rem 0;
+ }
 
-/* Paragraph style for contact cards */
-.contact-card p {
-    color: var(--text-color);
-    margin-bottom: 0;
-}
+ /* Paragraph style for contact cards */
+ .contact-card p {
+     color: var(--text-color);
+     margin-bottom: 0;
+ }
 
-/* Link styling within contact cards */
-.contact-card a {
-    color: var(--light-text-color);
-    text-decoration: none;
-}
+ /* Link styling within contact cards */
+ .contact-card a {
+     color: var(--light-text-color);
+     text-decoration: none;
+ }
 
-/* Hover effect for links in contact cards */
-.contact-card a:hover {
-    color: var(--primary-color);
-}
+ /* Hover effect for links in contact cards */
+ .contact-card a:hover {
+     color: var(--primary-color);
+ }
 
-/* Footer Styles */
-footer {
-    background: var(--gradient-dark);
-    color: var(--light-text-color);
-    padding: 2rem 0;
-    text-align: center;
-}
+ /* Footer Styles */
+ footer {
+     background: var(--gradient-dark);
+     color: var(--light-text-color);
+     padding: 2rem 0;
+     text-align: center;
+ }
 
-footer p {
-    margin-bottom: 0;
-}
+ footer p {
+     margin-bottom: 0;
+ }
 
-/* Move to Top Button Styles */
-#moveToTopBtn {
-    display: none;
-    /* Hidden by default, shown via JavaScript */
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    /* Ensure it's above other elements */
-    font-size: 20px;
-    background: var(--gradient-dark);
-    color: var(--light-text-color);
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    cursor: pointer;
-    padding: 15px 25px;
-    border-radius: 50px;
-    backdrop-filter: blur(10px);
-    /* Creates a frosted glass effect */
-    box-shadow: 0 8px 32px var(--shadow-color);
-    transition: all 0.3s ease;
-    animation: fadeIn 0.5s ease-in-out;
-}
+ /* Move to Top Button Styles */
+ #moveToTopBtn {
+     display: none;
+     /* Hidden by default, shown via JavaScript */
+     position: fixed;
+     bottom: 20px;
+     right: 30px;
+     z-index: 99;
+     /* Ensure it's above other elements */
+     font-size: 20px;
+     background: var(--gradient-dark);
+     color: var(--light-text-color);
+     border: 2px solid rgba(255, 255, 255, 0.4);
+     cursor: pointer;
+     padding: 15px 25px;
+     border-radius: 50px;
+     backdrop-filter: blur(10px);
+     /* Creates a frosted glass effect */
+     box-shadow: 0 8px 32px var(--shadow-color);
+     transition: all 0.3s ease;
+     animation: fadeIn 0.5s ease-in-out;
+ }
 
-/* Hover effect for the Move to Top button */
-#moveToTopBtn:hover {
-    background: var(--accent-color);
-    transform: scale(1.15) translateY(-5px);
-    /* Enlarge and lift slightly */
-    box-shadow: 0 12px 48px var(--shadow-color);
-}
+ /* Hover effect for the Move to Top button */
+ #moveToTopBtn:hover {
+     background: var(--accent-color);
+     transform: scale(1.15) translateY(-5px);
+     /* Enlarge and lift slightly */
+     box-shadow: 0 12px 48px var(--shadow-color);
+ }
 
-/* Add an arrow icon before the button text */
-#moveToTopBtn::before {
-    content: '⬆';
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 24px;
-    vertical-align: middle;
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: rgba(255, 255, 255, 0.8);
-}
+ /* Add an arrow icon before the button text */
+ #moveToTopBtn::before {
+     content: '⬆';
+     display: inline-block;
+     margin-right: 10px;
+     font-size: 24px;
+     vertical-align: middle;
+     transition: transform 0.3s ease, color 0.3s ease;
+     color: rgba(255, 255, 255, 0.8);
+ }
 
-/* Animate the arrow icon on hover */
-#moveToTopBtn:hover::before {
-    transform: translateY(-5px);
-    color: rgba(255, 255, 255, 1);
-}
+ /* Animate the arrow icon on hover */
+ #moveToTopBtn:hover::before {
+     transform: translateY(-5px);
+     color: rgba(255, 255, 255, 1);
+ }
 
-/* Keyframe animation for a subtle glow effect */
-@keyframes glow {
-    0% {
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    }
+ /* Keyframe animation for a subtle glow effect */
+ @keyframes glow {
+     0% {
+         box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+     }
 
-    50% {
-        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
-    }
+     50% {
+         box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+     }
 
-    100% {
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    }
-}
+     100% {
+         box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+     }
+ }
 
-/* Apply the glow animation on hover */
-#moveToTopBtn:hover {
-    animation: glow 1.5s infinite alternate;
-}
+ /* Apply the glow animation on hover */
+ #moveToTopBtn:hover {
+     animation: glow 1.5s infinite alternate;
+ }
+
+ /*  */
+ /* Base Styles - Existing Code Remains As-Is */
+
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+
+     /* Carousel Adjustments */
+     .carousel-item {
+         min-height: 300px;
+         /* Reduce the minimum height for smaller screens */
+     }
+
+     .carousel-caption {
+         padding: 10px;
+         font-size: 0.9rem;
+     }
+
+     .carousel-caption h5 {
+         font-size: 1.5rem;
+     }
+
+     .carousel-caption p {
+         font-size: 1rem;
+     }
+
+     /* Navbar Adjustments */
+     .navbar-brand {
+         font-size: 1.5rem;
+     }
+
+     .navbar-light .navbar-nav .nav-link {
+         font-size: 0.9rem;
+     }
+
+     /* Offer Cards and Product Cards Adjustments */
+     .offer-card,
+     .card {
+         padding: 1rem;
+         margin-bottom: 20px;
+         /* Add margin between stacked cards */
+     }
+
+     /* Button Adjustments */
+     .btn-primary {
+         padding: 0.5rem 1rem;
+         font-size: 0.9rem;
+     }
+
+     /* General Typography Adjustments */
+     body {
+         font-size: 0.9rem;
+     }
+
+     .section-header h1,
+     .section-header h2 {
+         font-size: 2rem;
+     }
+
+     .section-header p {
+         font-size: 1rem;
+     }
+
+     /* Move to Top Button Adjustments */
+     #moveToTopBtn {
+         padding: 10px 15px;
+         font-size: 18px;
+     }
+
+     #moveToTopBtn::before {
+         font-size: 20px;
+     }
+ }
+
+ @media (max-width: 576px) {
+
+     /* Carousel Adjustments */
+     .carousel-item {
+         min-height: 250px;
+         /* Further reduce the minimum height */
+     }
+
+     .carousel-caption h5 {
+         font-size: 1.25rem;
+     }
+
+     .carousel-caption p {
+         font-size: 0.9rem;
+     }
+
+     /* Navbar Adjustments */
+     .navbar-brand {
+         font-size: 1.25rem;
+     }
+
+     /* Offer Cards and Product Cards Adjustments */
+     .offer-card,
+     .card {
+         padding: 0.75rem;
+     }
+
+     /* Button Adjustments */
+     .btn-primary {
+         padding: 0.4rem 0.8rem;
+         font-size: 0.85rem;
+     }
+
+     /* General Typography Adjustments */
+     body {
+         font-size: 0.85rem;
+     }
+
+     .section-header h1,
+     .section-header h2 {
+         font-size: 1.75rem;
+     }
+
+     .section-header p {
+         font-size: 0.9rem;
+     }
+
+     /* Move to Top Button Adjustments */
+     #moveToTopBtn {
+         padding: 8px 12px;
+         font-size: 16px;
+     }
+
+     #moveToTopBtn::before {
+         font-size: 18px;
+     }
+ }

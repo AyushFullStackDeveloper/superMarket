@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- webpage title -->
-    <title>Snacks</title>
+    <title>Dryfruits</title>
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -279,6 +279,8 @@
             }
         }
 
+        /*  */
+
         /* Move to Top Button Styles */
         #moveToTopBtn {
             display: none;
@@ -347,8 +349,6 @@
             animation: glow 1.5s infinite alternate;
         }
     </style>
-
-   
 </head>
 
 <body>
@@ -418,6 +418,7 @@
             </div>
             <!-- Note: Carousel controls (prev/next buttons) are missing in this snippet -->
         </div>
+
         <!-- products section start -->
         <section id="products" class="section">
             <div class="container" id="rice">
@@ -569,33 +570,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+    <script>
+        // Get the "Move to Top" button element
+        let moveToTopBtn = document.getElementById("moveToTopBtn");
 
-<script>
-    // Get the "Move to Top" button element
-    let moveToTopBtn = document.getElementById("moveToTopBtn");
+        // Add scroll event listener to window
+        window.onscroll = function () {
+            scrollFunction();
+        };
 
-    // Add scroll event listener to window
-    window.onscroll = function () {
-        scrollFunction();
-    };
-
-    // Function to show/hide the "Move to Top" button based on scroll position
-    function scrollFunction() {
-        // Show button when user scrolls down 20px from the top of the document
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            moveToTopBtn.style.display = "block";
-        } else {
-            moveToTopBtn.style.display = "none";
+        // Function to show/hide the "Move to Top" button based on scroll position
+        function scrollFunction() {
+            // Show button when user scrolls down 20px from the top of the document
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                moveToTopBtn.style.display = "block";
+            } else {
+                moveToTopBtn.style.display = "none";
+            }
         }
-    }
 
-    // Add click event listener to the "Move to Top" button
-    moveToTopBtn.addEventListener("click", function () {
-        // Scroll to the top of the document
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    });
-</script>
+        // Add click event listener to the "Move to Top" button
+        moveToTopBtn.addEventListener("click", function () {
+            // Scroll to the top of the document
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+    </script>
 </body>
 
 </html>
