@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --accent-color: #f1c40f;
+            --background-color: #ecf0f1;
+            --text-color: #34495e;
+            --light-text: #ffffff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        .navbar {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--secondary-color);
+            background-color: var(--primary-color) !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--light-text) !important;
+        }
+
+        .album {
+            background-color: var(--background-color);
+            padding: 30px 0;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            border-bottom: 1px solid var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .btn-bd-primary {
+            --bs-btn-bg: var(--primary-color);
+            --bs-btn-border-color: var(--primary-color);
+            color: var(--light-text);
+        }
+
+        .btn-bd-primary:hover {
+            --bs-btn-bg: var(--secondary-color);
+            --bs-btn-border-color: var(--secondary-color);
+        }
+
+        .btn-outline-secondary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+
+        .footer {
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .text-muted {
+            color: var(--text-color) !important;
+        }
+
+        .btn-group button {
+            margin: 0;
+        }
+
+        .card {
+            height: 100%;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--primary-color);
+        }
+
+        .lead {
+            color: var(--text-color);
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Album example">
+    <title>Album Example</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Glossary</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="album py-5">
+            <h1 class="text-center mb-4">Dryfruits</h1>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/81CFBPAMmdL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Assorted Dry Fruits">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Assorted Dry Fruits</h5>
+
+                                <ul class="list-unstyled">
+                                    <li><strong>Freshness Guaranteed:</strong> Packed to retain natural flavors and
+                                        nutrients.</li>
+                                    <li><strong>Perfect for Any Occasion:</strong> Enjoy as a snack or use in your
+                                        favorite recipes.</li>
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹ 400 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat similar blocks as needed -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/419Si8DdufL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Mixed Nuts and Dry Fruits">
+                            <div class="card-body">
+                                <h5 class="card-title">Deluxe Mixed Nuts & Dry Fruits</h5>
+
+                                <ul class="list-unstyled">
+                                    <li><strong>Rich in Nutrients:</strong> Packed with essential vitamins and minerals.
+                                    </li>
+                                    <li><strong>Great for Snacking:</strong> A healthy and tasty choice any time of the
+                                        day.</li>
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹ 350 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/71KGtsd2PML._AC_UL320_.jpg"
+                                class="card-img-top" alt="Premium Meva Mix">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Meva Mix</h5>
+                                <ul class="list-unstyled">
+                                    <li><strong>Rich in Nutrients:</strong> Packed with essential vitamins and minerals.
+                                    </li>
+                                    <li><strong>Perfect for Gifting:</strong> Beautifully packaged for special
+                                        occasions.</li>
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹ 450 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/71tYPz++3+L._AC_UL320_.jpg"
+                                class="card-img-top" alt="Organic Almonds">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Cashew Nuts</h5>
+
+                                <ul class="list-unstyled">
+                                    <li><strong>High in Healthy Fats:</strong> Supports heart health and overall
+                                        wellness.</li>
+                                    <li><strong>Perfect for Gifting:</strong> Comes in a resealable pack to maintain
+                                        freshness.</li>
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹ 450 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/716+Hb5aYhL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Premium Mix Dry Fruits">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Mix Dry Fruits</h5>
+                                <ul class="list-unstyled">
+                                    <li><strong>Nutrient-Dense:</strong> Rich in vitamins, minerals, and antioxidants.
+                                    </li>
+                                    <li><strong>Versatile Snack:</strong> Ideal for both snacking and culinary
+                                        creations.</li>
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹89 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/61WoC0+Ru6L._AC_UL320_.jpg"
+                                class="card-img-top" alt="Premium Dried Fruit">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Dried Fruit</h5>
+                                <ul class="list-unstyled">
+                                    <li><strong>Natural Sweetness:</strong> No added sugars, just pure fruit goodness.
+                                    </li>
+                                    <li><strong>Convenient Snacking:</strong> Easy to carry and perfect for on-the-go.
+                                    </li>
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹90 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/71uoadMXYJL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Mixed Dried Fruits">
+                            <div class="card-body">
+                                <h5 class="card-title">Mixed Dried Fruits</h5>
+                                <ul class="list-unstyled">
+                                    <li><strong>Nutritious Blend:</strong> Combines various dried fruits for a balanced
+                                        snack.</li>
+                                    <li><strong>Versatile Use:</strong> Perfect for snacking, baking, or adding to
+                                        cereals.</li>
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹89 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/71qnJ7cBt5L._AC_UL320_.jpg"
+                                class="card-img-top" alt="Super Berries Mix">
+                            <div class="card-body">
+                                <h5 class="card-title">Super Berries Mix</h5>
+                                <ul class="list-unstyled">
+                                    <li><strong>Antioxidant-Rich:</strong> Loaded with vitamins and antioxidants for a
+                                        health boost.</li>
+                                    <li><strong>Versatile Use:</strong> Great for snacks, smoothies, or topping on your
+                                        favorite dishes.</li>
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹90 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/81I-keFMuaL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Mixed Nuts">
+                            <div class="card-body">
+                                <h5 class="card-title">Mixed Nuts: Cashews, Raisins, Almonds, and Pistachios</h5>
+
+                                <ul class="list-unstyled">
+                                    <li><strong>Nutritious Blend:</strong> A mix of nuts and raisins offering a balanced
+                                        combination of protein, healthy fats, and essential vitamins.</li>
+
+                                    <li><strong>Net Weight:</strong> 250 gm</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹ 400 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/71I2CklVoNL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Very Berry Crunch">
+                            <div class="card-body">
+                                <p class="card-text">Enjoy the delightful crunch of berries in every bite with Very
+                                    Berry Crunch. A perfect blend of taste and nutrition.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order
+                                            Now</a>
+                                    </div>
+                                    <small class="text-muted">₹ 230 / 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/71I2CklVoNL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A wider card with supporting text below.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order</a>
+                                    </div>
+                                    <small class="text-muted">₹ 230/ 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/81g2WDX2zNL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A wider card with supporting text below.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order</a>
+                                    </div>
+                                    <small class="text-muted">₹ 150/ 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/713D1eLsaqL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A wider card with supporting text below.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order</a>
+                                    </div>
+                                    <small class="text-muted">₹ 200/ 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/71h5dhweRwL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A wider card with supporting text below.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order</a>
+                                    </div>
+                                    <small class="text-muted">₹ 75/ 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Example of repeated card block -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/81El9GL1sUL._AC_UL320_.jpg"
+                                class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A wider card with supporting text below.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../order.html" class="btn btn-sm btn-outline-secondary">Order</a>
+                                    </div>
+                                    <small class="text-muted">₹ 100/ 250 gm</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col"> ... </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Bootstrap. Customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="/" class="text-white">Visit the homepage</a></p>
+    </footer>
+</body>
+
+</html>
