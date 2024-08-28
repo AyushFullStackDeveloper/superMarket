@@ -59,17 +59,21 @@
             padding: 1rem 0;
         }
 
+        /* Navbar Styles */
         .navbar-brand {
             font-size: 1.75rem;
             font-weight: bold;
             color: var(--light-text-color);
         }
 
+        /* Styling for navigation links */
         .navbar-light .navbar-nav .nav-link {
             color: var(--light-text-color);
             transition: color 0.3s ease;
+            /* Smooth color transition on hover */
         }
 
+        /* Hover and focus styles for navigation links */
         .navbar-light .navbar-nav .nav-link:hover,
         .navbar-light .navbar-nav .nav-link:focus {
             color: var(--accent-color);
@@ -85,14 +89,18 @@
             overflow: hidden;
         }
 
+        /* Styling for carousel images */
         .carousel-item img {
             width: 100%;
             height: auto;
             filter: brightness(0.9) contrast(1.1);
+            /* Adjusting image appearance */
         }
 
+        /* Styling for carousel captions */
         .carousel-caption {
             background-color: rgba(46, 125, 50, 0.7);
+            /* Semi-transparent background */
             border-radius: 5px;
             padding: 20px;
             color: var(--light-text-color);
@@ -105,6 +113,7 @@
             color: var(--text-color);
         }
 
+        /* Styling for section header titles */
         .section-header h1,
         .section-header h2 {
             font-size: 2.5rem;
@@ -113,6 +122,7 @@
             margin-bottom: 1rem;
         }
 
+        /* Styling for section header paragraphs */
         .section-header p {
             font-size: 1.25rem;
             color: var(--text-color);
@@ -125,43 +135,51 @@
             padding: 5rem 0;
         }
 
+        /* Styling for individual offer cards */
         .offer-card {
             background-color: var(--card-background);
             border-radius: 15px;
             padding: 2rem;
             height: 100%;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition for hover effects */
             text-align: center;
             color: var(--text-color);
         }
 
+        /* Hover effect for offer cards */
         .offer-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px var(--shadow-color);
         }
 
+        /* Styling for icons in offer cards */
         .offer-card i {
             font-size: 3rem;
             color: var(--accent-color);
             margin-bottom: 1rem;
         }
 
+        /* Styling for offer card titles */
         .offer-card h3 {
             color: var(--secondary-color);
             margin-bottom: 1rem;
         }
 
+        /* Styling for offer card paragraphs */
         .offer-card p {
             color: var(--text-color);
             margin-bottom: 1.5rem;
         }
 
+        /* Styling for buttons in offer cards */
         .offer-card .btn {
             background-color: var(--primary-color);
             border-color: var(--primary-color);
             color: var(--light-text-color);
         }
 
+        /* Hover effect for buttons in offer cards */
         .offer-card .btn:hover {
             background-color: var(--accent-color);
             border-color: var(--accent-color);
@@ -173,22 +191,26 @@
             display: flex;
             flex-direction: column;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition for hover effects */
             border: none;
             border-radius: 15px;
             overflow: hidden;
             background: var(--gradient-light);
         }
 
+        /* Hover effect for product cards */
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px var(--shadow-color);
         }
 
+        /* Styling for product card images */
         .card-img-top {
             height: 200px;
             object-fit: cover;
         }
 
+        /* Styling for product card body */
         .card-body {
             flex-grow: 1;
             display: flex;
@@ -196,12 +218,14 @@
             padding: 1.5rem;
         }
 
+        /* Styling for product card titles */
         .card-title {
             font-size: 1.25rem;
             font-weight: bold;
             color: var(--secondary-color);
         }
 
+        /* Styling for product card text */
         .card-text {
             flex-grow: 1;
             margin-bottom: 1rem;
@@ -213,6 +237,7 @@
             border-color: var(--primary-color);
             color: var(--light-text-color);
             transition: all 0.3s ease;
+            /* Smooth transition for hover effects */
             padding: 0.75rem 1.5rem;
             text-align: center;
             border-radius: 5px;
@@ -222,6 +247,7 @@
             display: inline-block;
         }
 
+        /* Hover and focus effects for primary buttons */
         .btn-primary:hover,
         .btn-primary:focus {
             background-color: var(--accent-color);
@@ -242,30 +268,38 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        /* Contact Card Styles */
         .contact-card:hover {
             transform: translateY(-5px);
+            /* Slight upward movement on hover */
             box-shadow: 0 4px 8px var(--shadow-color);
+            /* Add shadow for depth */
         }
 
+        /* Icon styling within contact cards */
         .contact-card i {
             color: var(--secondary-color);
         }
 
+        /* Heading style for contact cards */
         .contact-card h3 {
             color: var(--secondary-color);
             margin: 1rem 0;
         }
 
+        /* Paragraph style for contact cards */
         .contact-card p {
             color: var(--text-color);
             margin-bottom: 0;
         }
 
+        /* Link styling within contact cards */
         .contact-card a {
             color: var(--light-text-color);
             text-decoration: none;
         }
 
+        /* Hover effect for links in contact cards */
         .contact-card a:hover {
             color: var(--primary-color);
         }
@@ -285,10 +319,12 @@
         /* Move to Top Button Styles */
         #moveToTopBtn {
             display: none;
+            /* Hidden by default, shown via JavaScript */
             position: fixed;
             bottom: 20px;
             right: 30px;
             z-index: 99;
+            /* Ensure it's above other elements */
             font-size: 20px;
             background: var(--gradient-dark);
             color: var(--light-text-color);
@@ -297,17 +333,21 @@
             padding: 15px 25px;
             border-radius: 50px;
             backdrop-filter: blur(10px);
+            /* Creates a frosted glass effect */
             box-shadow: 0 8px 32px var(--shadow-color);
             transition: all 0.3s ease;
             animation: fadeIn 0.5s ease-in-out;
         }
 
+        /* Hover effect for the Move to Top button */
         #moveToTopBtn:hover {
             background: var(--accent-color);
             transform: scale(1.15) translateY(-5px);
+            /* Enlarge and lift slightly */
             box-shadow: 0 12px 48px var(--shadow-color);
         }
 
+        /* Add an arrow icon before the button text */
         #moveToTopBtn::before {
             content: '⬆';
             display: inline-block;
@@ -318,12 +358,13 @@
             color: rgba(255, 255, 255, 0.8);
         }
 
+        /* Animate the arrow icon on hover */
         #moveToTopBtn:hover::before {
             transform: translateY(-5px);
             color: rgba(255, 255, 255, 1);
         }
 
-        /* Subtle Glow Animation */
+        /* Keyframe animation for a subtle glow effect */
         @keyframes glow {
             0% {
                 box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
@@ -338,6 +379,7 @@
             }
         }
 
+        /* Apply the glow animation on hover */
         #moveToTopBtn:hover {
             animation: glow 1.5s infinite alternate;
         }
@@ -371,64 +413,90 @@
             </div>
         </div>
     </nav>
-    <!--  -->
+    <!-- navbar section end  -->
 
 
     <!-- Move to Top Button -->
     <button id="moveToTopBtn" title="Go to top">Move To Top</button>
     <!--  -->
-    <!-- Carousel -->
+    <!-- Carousel container -->
     <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel indicators -->
         <div class="carousel-indicators">
+            <!-- Indicator for the first slide (active by default) -->
             <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active"
                 aria-current="true"></button>
+            <!-- Indicator for the second slide -->
             <button type="button" data-bs-target="#home" data-bs-slide-to="1"></button>
+            <!-- Indicator for the third slide -->
             <button type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
         </div>
+
+        <!-- Carousel content -->
         <div class="carousel-inner">
+            <!-- First carousel item (active by default) -->
             <div class="carousel-item active">
+                <!-- Video element as the background of the carousel item -->
                 <video src="./assets/videos/first-video.mp4" autoplay loop muted class="d-block w-100"></video>
+                <!-- Caption for the carousel item (hidden on small screens) -->
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome to Super Bazar</h5>
                     <p>Your one-stop shop for all your needs.</p>
                 </div>
             </div>
+            <!-- Note: Second and third carousel items are missing in this snippet -->
         </div>
+        <!-- Note: Carousel controls (prev/next buttons) are missing in this snippet -->
     </div>
 
     <!-- Offers Section -->
+    <!-- This section displays exclusive offers and deals to attract customers -->
     <section id="offers" class="offers-section py-5 bg-light">
+        <!-- Container to center content and provide consistent spacing -->
         <div class="container">
+            <!-- Section header with title and subtitle -->
             <div class="section-header text-center mb-5">
+                <!-- Main title using Bootstrap's display classes for emphasis -->
                 <h1 class="display-3 font-weight-bold text-primary">Exclusive Offers</h1>
-                <p class="lead text-dark">Don’t miss out on our special deals!</p>
+                <!-- Subtitle using Bootstrap's lead class for secondary emphasis -->
+                <p class="lead text-dark">Don't miss out on our special deals!</p>
             </div>
+
+            <!-- Row to contain offer cards, with gutter spacing (g-4) -->
             <div class="row g-4">
+                <!-- First offer card: Discounts -->
                 <div class="col-md-4">
+                    <!-- Card container with various Bootstrap classes for styling -->
                     <div
                         class="offer-card d-flex flex-column align-items-center text-center p-4 bg-white shadow-lg rounded-lg border border-primary">
+                        <!-- Font Awesome icon for visual representation -->
                         <i class="fas fa-percent fa-4x mb-3 text-primary"></i>
+                        <!-- Offer title -->
                         <h3 class="h4 mb-2 text-primary font-weight-bold">Discounts</h3>
+                        <!-- Offer description -->
                         <p class="mb-3 text-muted">Get up to 50% off on selected products.</p>
-
                     </div>
                 </div>
+
+                <!-- Second offer card: Free Shipping -->
                 <div class="col-md-4">
+                    <!-- Similar structure to the first card, with different icon and content -->
                     <div
                         class="offer-card d-flex flex-column align-items-center text-center p-4 bg-white shadow-lg rounded-lg border border-success">
                         <i class="fas fa-truck fa-4x mb-3 text-success"></i>
                         <h3 class="h4 mb-2 text-success font-weight-bold">Free Shipping</h3>
                         <p class="mb-3 text-muted">Enjoy free shipping on orders over $100.</p>
-
                     </div>
                 </div>
+
+                <!-- Third offer card: Gift Cards -->
                 <div class="col-md-4">
+                    <!-- Similar structure to previous cards, with different icon and content -->
                     <div
                         class="offer-card d-flex flex-column align-items-center text-center p-4 bg-white shadow-lg rounded-lg border border-warning">
                         <i class="fas fa-gift fa-4x mb-3 text-warning"></i>
                         <h3 class="h4 mb-2 text-warning font-weight-bold">Gift Cards</h3>
                         <p class="mb-3 text-muted">Give the gift of choice with our gift cards.</p>
-
                     </div>
                 </div>
             </div>
@@ -440,52 +508,71 @@
     <!-- Product section start -->
     <div class="album py-5 bg-light" id="product">
         <div class="container">
+            <!-- Section header -->
             <h2 class="section-header">Our Products</h2>
+            <!-- Product grid -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <!-- Product 1: Kitchen Glossary -->
                 <div class="col">
                     <div class="card shadow-sm">
+                        <!-- Product image -->
                         <img src="https://1.bp.blogspot.com/-g7n4grqx_SA/UGBN2ZZBqJI/AAAAAAAAAVU/SWycV5bPTqU/s1600/spices1.jpg"
                             class="card-img-top" alt="Product 1" />
                         <div class="card-body">
+                            <!-- Product title -->
                             <h5 class="card-title">Kitchen Glossary</h5>
+                            <!-- Product description -->
                             <p class="card-text">
                                 This is a brief description of Product 1. Highlight its key
                                 features and benefits.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
+                                <!-- View products button -->
                                 <a href="./assets/products/gloceries.html" class="btn btn-primary">View Products
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Product 2: Dryfruits -->
                 <div class="col">
                     <div class="card shadow-sm">
+                        <!-- Product image -->
                         <img src="https://www.itoozhiayurveda.in/wp-content/uploads/2023/10/set-pecan-pistachios-almond-peanut-cashew-pine-nuts-lined-up-assorted-nuts-dried-fruits-mini-different-bowls-scaled.jpg"
                             class="card-img-top" alt="Product 2" />
                         <div class="card-body">
+                            <!-- Product title -->
                             <h5 class="card-title">Dryfruits</h5>
+                            <!-- Product description -->
                             <p class="card-text">
                                 This is a brief description of Product 2. Highlight its key
                                 features and benefits.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
+                                <!-- View products button -->
                                 <a href="./assets/products/gloceries.html" class="btn btn-primary">View Products</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Product 3: Snacks -->
                 <div class="col">
                     <div class="card shadow-sm">
+                        <!-- Product image -->
                         <img src="https://www.bruker.com/en/applications/food-analysis-and-agriculture/food-quality/snacks/_jcr_content/teaserImage.coreimg.jpeg/1597679208099/savoury-snacks.jpeg"
                             class="card-img-top" alt="Product 3" />
                         <div class="card-body">
+                            <!-- Product title -->
                             <h5 class="card-title">Snacks</h5>
+                            <!-- Product description -->
                             <p class="card-text">
                                 This is a brief description of Product 3. Highlight its key
                                 features and benefits.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
+                                <!-- View products button -->
                                 <a href="./assets/products/snacks.html" type="button" class="btn btn-primary">View
                                     Products</a>
                             </div>
@@ -499,11 +586,14 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5 bg-light">
         <div class="container">
+            <!-- Section header -->
             <div class="section-header text-center mb-5">
                 <h2 class="display-4 mb-3">Contact Us</h2>
                 <p class="lead mb-4">We'd love to hear from you! Reach out to us using the information below.</p>
             </div>
+            <!-- Contact information cards -->
             <div class="row g-4">
+                <!-- Phone contact card -->
                 <div class="col-md-4">
                     <div class="contact-card p-4 text-center border rounded shadow-sm bg-white hover-effect">
                         <i class="fas fa-phone fa-3x mb-3" aria-hidden="true"></i>
@@ -512,6 +602,7 @@
                                 7890</a></p>
                     </div>
                 </div>
+                <!-- Email contact card -->
                 <div class="col-md-4">
                     <div class="contact-card p-4 text-center border rounded shadow-sm bg-white hover-effect">
                         <i class="fas fa-envelope fa-3x mb-3" aria-hidden="true"></i>
@@ -520,6 +611,7 @@
                                 class="text-dark text-decoration-none">info@superbazar.com</a></p>
                     </div>
                 </div>
+                <!-- Address contact card with map link -->
                 <div class="col-md-4">
                     <a href="https://www.google.com/maps/place/RISHI'S+SUPER+BAZAR+KATOL-BEST+SUPERMART+IN+KATOL/@21.2695867,78.5851212,74m/data=!3m1!1e3!4m14!1m7!3m6!1s0x3bd4590a0bc3a3b9:0xc4541080db350bdb!2sJOSHI+SUPER+BAZAR!8m2!3d21.2686485!4d78.5863229!16s%2Fg%2F11rs9s_4bt!3m5!1s0x3bd459e6da7f94b5:0x6c4acbfcc20d79ec!8m2!3d21.269518!4d78.5854595!16s%2Fg%2F11cmmxjmkf?entry=ttu"
                         class="contact-card p-4 text-center border rounded shadow-sm bg-white hover-effect d-block text-decoration-none"
@@ -533,36 +625,41 @@
         </div>
     </section>
 
-
-
     <!-- Footer -->
     <footer class="bg-dark text-white">
         <div class="container">
+            <!-- Copyright information -->
             <p class="mb-0">&copy; 2024 Super Bazar. All rights reserved.</p>
         </div>
     </footer>
-
     <!-- Bootstrap JS Bundle with Popper -->
+    <!-- This script includes Bootstrap's JavaScript functionality and Popper.js for tooltips and popovers -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-dG4IGvEtovWmqaH2A8Ves0tPhtIFomzE0lAm7mB5Fw2IEokTc9OGe9t2Y4RQYpm7" crossorigin="anonymous">
-
         </script>
+
     <script>
-        // Get the button
+        // Get the "Move to Top" button element
         let moveToTopBtn = document.getElementById("moveToTopBtn");
-        // When the user scrolls down 20px from the top of the document, show the button
+
+        // Add scroll event listener to window
         window.onscroll = function () {
             scrollFunction();
         };
+
+        // Function to show/hide the "Move to Top" button based on scroll position
         function scrollFunction() {
+            // Show button when user scrolls down 20px from the top of the document
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 moveToTopBtn.style.display = "block";
             } else {
                 moveToTopBtn.style.display = "none";
             }
         }
-        // When the user clicks on the button, scroll to the top of the document
+
+        // Add click event listener to the "Move to Top" button
         moveToTopBtn.addEventListener("click", function () {
+            // Scroll to the top of the document
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         });
